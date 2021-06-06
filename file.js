@@ -1,7 +1,12 @@
 
 
 
-
+if(localStorage.getItem('h') == null){
+	localStorage.setItem('h', []) 
+}
+if(localStorage.getItem('p') == null){
+	localStorage.setItem('p', []) 
+}
 var start = document.querySelector('.control-btns span'),
 	names = document.querySelector('.name span');
 
