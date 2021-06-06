@@ -111,10 +111,8 @@ function shuffle(array){
 	return array
 	
 }
-let ar3 = localStorage.getItem('h2').split(','),
-	ar4 = ar3.splice(0,5),
-	ar5 = localStorage.getItem('p2').split(','),
-	ar6 = ar5.splice(0,5)
+let ar4 = localStorage.getItem('h2').split(',').splice(0,5),
+	ar6 = localStorage.getItem('p2').split(',').splice(0,5)
 document.querySelector('.congrats').onclick = function(){
 	this.style.display = 'none';
 	localStorage.setItem('h',localStorage.getItem('h2').split(','))
