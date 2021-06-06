@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Memory Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="congrats">
+	<span>Congratulation You Won</span>
+	<p>Wrong Tries: <span></span></p>
+	</div>
+	<div class="control-btns">
+      <span>Start Game</span>
+	</div>
+	<div class="info-container">
+	  <div class="name">
+		Hello: <span></span>
+	  </div>
+	  <div class="tries">
+		Wrong Tries: <span>0</span>
+	  </div>
+	</div>
+	<div class="memory-game">
+	  <div class="game-block" data-lang='html'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/1.png" alt="1">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='html'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/1.png" alt="1">
+		</div>
+	  </div>
+	  <div class="game-block" data-lang='python'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/2.png" alt="2">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='python'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/2.png" alt="2">
+		</div>
+	  </div>
+	  <div class="game-block" data-lang='vue'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/3.jpg" alt="3">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='vue'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/3.jpg" alt="3">
+		</div>
+	  </div>
+	  <div class="game-block" data-lang='react'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/4.png" alt="4">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='react'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/4.png" alt="4">
+		</div>
+	  </div>
+	  <div class="game-block" data-lang='github'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/5.png" alt="5">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='github'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/5.png" alt="5">
+		</div>
+	  </div>
+	   <div class="game-block" data-lang='jest'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/6.png" alt="6">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='jest'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/6.png" alt="6">
+		</div>
+	  </div>
+	   <div class="game-block" data-lang='angular'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/7.png" alt="7">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='angular'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/7.png" alt="7">
+		</div>
+	  </div>
+	   <div class="game-block" data-lang='gulp'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/8.png" alt="8">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='gulp'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/8.png" alt="8">
+		</div>
+	  </div>
+	   <div class="game-block" data-lang='mongodb'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/9.jpg" alt="9">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='mongodb'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/9.jpg" alt="9">
+		</div>
+	  </div>
+	   <div class="game-block" data-lang='css'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/10.png" alt="10">
+		</div>
+	  </div>
+	  <div class="game-block"data-lang='css'>
+		<div class="sh front"></div>
+		<div class="sh back">
+		  <img src="images/10.png" alt="10">
+		</div>
+	  </div>
+	</div>
+	<div class="highscore">
+		<div class="playername">
+		<h2>PlayerName</h2>
+		</div>
+		<div class="score">
+		<h2>Score</h2>
+		</div>
+	</div>
+	<audio id="success"src="audio/success.mp3"preload="auto"></audio>
+	<audio id="fail"src="audio/fail.mp3"preload="auto"></audio>
+	<audio loop id="back"src="audio/back.mp3"preload="auto"></audio>
+	<script src="file.js"></script>
+</body>
+</html>

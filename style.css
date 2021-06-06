@@ -1,0 +1,158 @@
+*{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	user-select:none;
+
+}
+body 
+{
+	background:#0eea;
+	font-family:"Open Sans", sans-serif;
+	font-size:18px;
+}
+.congrats{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:2;
+	background:#ee0e;
+	display:none;
+}
+.control-btns{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:2;
+	background:#ee0e;
+}
+.congrats > p{
+	position:absolute;
+	left:50%;
+	top:55%;
+	transform:translate(-50%,-50%);
+	color:#fff;
+	background:#f44336;
+	padding:15px 25px;
+	font-size:30px;
+	text-align:center;
+	border-radius:6px;
+	cursor:pointer;
+}
+
+.control-btns span{cursor:pointer;}
+.control-btns span,
+.congrats > span{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	color:#fff;
+	background:#f44336;
+	padding:15px 25px;
+	font-size:30px;
+	text-align:center;
+	border-radius:6px;
+}
+.info-container{
+	width:690px;
+	margin:20px auto 0;
+	background:#f6f6f6;
+	padding:10px;
+	font-size:20px;
+	overflow:hidden;
+	border:2px solid #2196f3;
+}
+.info-container .name{
+	float:left;
+	width:50%;
+}
+.info-container .tries{
+	float:right;
+}
+.memory-game{
+	display:flex;
+	width:700px;
+	flex-wrap:wrap;
+	margin:20px auto;
+	
+}
+.memory-game.Unclickable{
+	pointer-events:none;
+}
+.memory-game .game-block{
+	height:130px;
+	transition:transform .5s;
+	transform-style:preserve-3d;
+	cursor:pointer;
+	position:relative;
+	flex:1 0 130px;
+	margin:0 5px 10px;
+	
+}
+.memory-game .game-block.matches,
+.memory-game .game-block.flipped
+{
+	transform:rotateY(180deg);
+	pointer-events:none;
+}
+.memory-game .game-block .front{
+	background:#333;
+	line-height:130px;
+}
+.memory-game .game-block .front:before{
+	content:'?';
+	font-size:110px;
+	color:#f6f6f6;
+	font-weight:bold;
+	
+}
+.memory-game .game-block .back{
+	background:#607d8b;
+	transform:rotateY(180deg)
+}
+
+.memory-game .game-block .back img{
+	width:119px;
+	height:119px;
+
+}
+.memory-game .game-block .sh{
+	position:absolute;
+	width:100%;
+	height:100%;
+	text-align:center;
+	backface-visibility:hidden;
+	border:5px solid #2196f3;
+}
+.highscore{
+	margin:20px auto;
+	width:700px;
+	
+}
+.highscore .playername{
+	width:50%;
+	float:left;
+}
+.highscore .score{
+	width:50%;
+	float:right;
+}
+.highscore .score span,
+.highscore .playername span{
+	display:block;
+	font-weight:bold;
+	margin-bottom:50px;
+}
+.highscore .score span{
+	color:#fff;
+	font-size:20px;
+
+}
+.highscore .playername span{
+	color:#f00;
+}
