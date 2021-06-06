@@ -7,6 +7,7 @@ if(localStorage.getItem('h2') == null){
 if(localStorage.getItem('p2') == null){
 	localStorage.setItem('p2', []) 
 }
+console.log([])
 var start = document.querySelector('.control-btns span'),
 	names = document.querySelector('.name span');
 
@@ -171,3 +172,4 @@ document.querySelector('.congrats').onclick = function(){
 		document.querySelector('.highscore .playername').appendChild(node)
 		console.log(node)
 	})
+// wefewg
